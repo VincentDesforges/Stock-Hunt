@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 
+import NavBar from '../../components/Navigation/NavBar/NavBar';
+import SideDrawer from '../../components/Navigation/SideDrawer/SideDrawer';
+
 import './Layout.css';
 
 class Layout extends Component {
@@ -10,8 +13,8 @@ class Layout extends Component {
   render() {
     return (
       <React.Fragment>
-        <p>Toolbar</p>
-        <p>Side Drawer</p>
+        <NavBar />
+        <SideDrawer open={this.state.showSideDrawer}/>
         <main className="LayoutContent">{this.props.children}</main>
       </React.Fragment>
     );

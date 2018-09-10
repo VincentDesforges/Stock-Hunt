@@ -3,3 +3,25 @@ body {
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
+
+/*
+Here is outlined all the design principles and variables to be used.
+*/
+
+:root {
+  /*First theme*/
+  --main-color-green: #23CE6B;
+  --main-color-yellow: #E0C341;
+  --main-color-black: #1A1E1E;
+  --main-color-dark-grey: #3F4045;
+  --main-color-light-grey: #CFCED1;
+
+  /*Second theme*/
+  --main-color-dark-blue: #175676;
+  --main-color-bright-blue: #2FC0ED;
+  --main-color-light-blue: #99CED3;
+  --main-color-white: #FFFFFF;
+  --main-color-orange: #F3C969;
+
+  --main-padding: 15px;
+}
