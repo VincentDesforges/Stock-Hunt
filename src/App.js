@@ -6,7 +6,6 @@ class App extends Component {
   render() {
     return (
       <div>
-        <h1>In App.js</h1>
         <Layout>
           <p>child into layout</p>
         </Layout>
