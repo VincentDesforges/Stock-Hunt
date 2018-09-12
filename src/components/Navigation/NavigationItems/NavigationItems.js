@@ -6,10 +6,11 @@ import './NavigationItems.css';
 
 const navigationItems = (props) => (
   <ul className="NavigationItems">
-    <NavigationItem>Home</NavigationItem>
-    <NavigationItem>New Strategy</NavigationItem>
-    <NavigationItem>My Strategies</NavigationItem>
-    <NavigationItem>Sign-Up/In</NavigationItem>
+    <NavigationItem to="/" exact>Home</NavigationItem>
+    <NavigationItem to="/strategy/testing">Testing</NavigationItem>
+    <NavigationItem to="/strategy/new">New Strategy</NavigationItem>
+    <NavigationItem to="/my-strategies">My Strategies</NavigationItem>
+    <NavigationItem to="/authenticate">Sign-Up/In</NavigationItem>
   </ul>
 );
 
