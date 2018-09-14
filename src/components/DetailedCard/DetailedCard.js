@@ -1,6 +1,7 @@
 import React from 'react';
 
 import FieldOutput from '../UI/FieldOutput/FieldOutput';
+import CardTabs from '../UI/CardTabs/CardTabs';
 import './DetailedCard.css'
 
 const detailedCard = (props) => {
@@ -8,11 +9,12 @@ const detailedCard = (props) => {
     <FieldOutput key={fieldName} field={fieldName} fieldData={props.stockData[fieldName]} />
   ));
 
-  // const listFields = props.stockData
-
   return (
   <div className="DetailedCard">
-    {listFields}
+    <CardTabs />
+    <div className="DetailedCardData">
+      {listFields}
+    </div>
   </div>
   );
 };

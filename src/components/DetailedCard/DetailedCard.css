@@ -2,9 +2,16 @@
   background-color: var(--main-color-white);
   width: 60%; /*<-- here add media queries for responsiveness*/
   margin: 20px auto; /*<-- here add media queries for responsiveness short screen size*/
-  overflow-y: scroll;
   height: calc(100vh - 250px);
-  padding: 20px 40px;
   border-radius: 7px;
   box-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+  overflow: hidden;
+}
+
+
+.DetailedCardData{
+  overflow-y: scroll;
+  padding: 20px 40px;
+  height: calc(100% - 50px); /*<-- here 50px is the height of the CardTabs*/
+  box-sizing: border-box;
 }
