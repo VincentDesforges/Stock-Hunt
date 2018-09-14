@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import DetailedCard from '../../components/DetailedCard/DetailedCard';
 import './NewStrategy.css';
 
+import CardNav from '../../components/UI/CardNav/CardNav'; // for testing purposes
+
 class NewStrategy extends Component {
   state = {
     exchange: 'NYSE',
@@ -52,6 +54,8 @@ class NewStrategy extends Component {
           </form>
         </div>
         <DetailedCard stockData={this.state.detailedData}/>
+
+        <CardNav/> {/*// for testing purposes*/}
       </div>
     );
   };

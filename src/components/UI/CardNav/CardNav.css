@@ -1,0 +1,27 @@
+.CardNav {
+  background-color: var(--main-color-dark-blue);
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  /*color: var(--main-color-white);*/
+  /*border: 6px solid var(--main-color-dark-blue);*/
+  border-radius: 6px;
+  padding: 6px;
+}
+
+.CardNavDiv {
+  background-color: var(--main-color-white);
+  border-bottom: 4px solid transparent;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  /*flex: 1 1 0;*/
+  /*padding: 15px 0;*/
+}
+
+.CardNavDiv:hover,
+.CardNavDiv.active {
+  border-bottom: 4px solid var(--main-color-orange);
+}
