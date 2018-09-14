@@ -1,12 +1,15 @@
 .CardNav {
   background-color: var(--main-color-dark-blue);
+  box-shadow: 0px 15px 15px rgba(0,0,0,0.5);
   width: 250px;
   display: flex;
   flex-direction: column;
-  /*color: var(--main-color-white);*/
-  /*border: 6px solid var(--main-color-dark-blue);*/
   border-radius: 6px;
   padding: 6px;
+
+  transform: translate3d(15px, -15px, 0);
+  /*transition: all 0.3s ease-in;*/
+  transition: all 0.3s cubic-bezier(0, 0, 0.73, 2.27);
 }
 
 .CardNavDiv {
@@ -19,6 +22,10 @@
   border-radius: 6px;
   /*flex: 1 1 0;*/
   /*padding: 15px 0;*/
+}
+
+.CardNav:hover, .CardNav.move {
+  transform: translate3d(30px, -30px, 0);
 }
 
 .CardNavDiv:hover,
