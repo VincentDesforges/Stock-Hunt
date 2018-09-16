@@ -5,3 +5,8 @@
 .NewStrategy .form-and-text{
   text-align: center;
 }
+
+.CardAndNavContainer {
+  display: flex;
+  padding-left: 15px;
+}

@@ -53,9 +53,10 @@ class NewStrategy extends Component {
             <button>Find Stock</button>
           </form>
         </div>
-        <DetailedCard stockData={this.state.detailedData}/>
-
-        <CardNav/> {/*// for testing purposes*/}
+        <div className="CardAndNavContainer">
+          <CardNav/> {/* for testing purposes*/}
+          <DetailedCard stockData={this.state.detailedData}/>
+        </div>
       </div>
     );
   };

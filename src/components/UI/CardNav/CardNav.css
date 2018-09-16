@@ -28,7 +28,8 @@
 }
 
 .CardNavDiv:hover {
-  width: 120%;
+  /*width: 120%;*/
+  transform: translateX(30px);
 }
 
 .CardNavDiv.active {

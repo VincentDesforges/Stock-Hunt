@@ -10,12 +10,12 @@ const detailedCard = (props) => {
   ));
 
   return (
-  <div className="DetailedCard">
-    <CardTabs />
-    <div className="DetailedCardData">
-      {listFields}
+    <div className="DetailedCard">
+      <CardTabs />
+      <div className="DetailedCardData">
+        {listFields}
+      </div>
     </div>
-  </div>
   );
 };
 
