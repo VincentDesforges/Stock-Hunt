@@ -1,0 +1,25 @@
+.CardTabs {
+  background-color: var(--main-color-dark-blue);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  color: var(--main-color-white);
+}
+
+.CardTabDiv {
+  flex: 1 1 0;
+  text-align: center;
+  padding: 15px 0;
+  border-bottom: 4px solid transparent;
+}
+
+.CardTabDiv:hover,
+.CardTabDiv.active {
+  /*background-color: var(--main-color-white);*/
+  border-bottom: 4px solid var(--main-color-orange);
+}
+
+/*flip card navigation effect*/
+/*https://www.youtube.com/watch?v=OV8MVmtgmoY*/
+/*https://www.youtube.com/watch?v=W3eJWpvIl0g*/
