@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import DetailedCard from '../../components/DetailedCard/DetailedCard';
 import './NewStrategy.css';
 
-import myData from '../../assets/tempData/AAPL.json';// <-- for testing purposes
+import myData from '../../assets/tempData/GE.json';// <-- for testing purposes
 import CardNav from '../../components/UI/CardNav/CardNav'; // for testing purposes
 
 class NewStrategy extends Component {
@@ -23,7 +23,8 @@ class NewStrategy extends Component {
       this.setState({
         detailedData: {
           ...myData[0],
-          ...myData[1]
+          ...myData[1],
+          ...myData[2]
         }
       });
     } catch(err) {
