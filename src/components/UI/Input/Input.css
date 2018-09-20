@@ -14,14 +14,10 @@
   outline: none;
   border: none;
   border-radius: 4px;
-  background-color: var(--main-color-white);
+  background-color: var(--main-color-light-grey);
   font: inherit;
   padding: 6px 10px;
   transition: all 0.3s ease-in-out;
-}
-
-.InputElement::placeholder {
-  color: var(--main-color-light-grey);
 }
 
 .InputElement:focus {

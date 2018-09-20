@@ -20,9 +20,10 @@
 }
 
 .DetailedCardChart{
-  background-color: red;
+  background-color: var(--main-color-light-blue);
   text-align: center;
   width: 70%; /*<-- this might have to be adjusted for various screen sizes*/
   height: 150px;
   margin: 15px auto;
+  border-radius: 5px;
 }

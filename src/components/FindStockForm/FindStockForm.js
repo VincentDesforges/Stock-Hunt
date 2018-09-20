@@ -9,7 +9,8 @@ const findStockForm = props => {
     <div className="form-and-text">
       <h2 style={{
         paddingTop: '20px',
-        color: 'white'
+        margin: 0,
+        color: 'var(--main-color-light-grey)',
       }}>Share your latest stock pick!</h2>
       <form onSubmit={props.formSubmitRegistered}>
         <Input name='exchange'
