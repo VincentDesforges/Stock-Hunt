@@ -5,6 +5,7 @@ import './NewStrategy.css';
 
 import myData from '../../assets/tempData/GE.json';// <-- for testing purposes
 import CardNav from '../../components/UI/CardNav/CardNav'; // for testing purposes
+import FindStockForm from '../../components/FindStockForm/FindStockForm'; // for testing purposes
 
 class NewStrategy extends Component {
   state = {
@@ -35,28 +36,11 @@ class NewStrategy extends Component {
   render() {
     return (
       <div className="NewStrategy">
-        <div className="form-and-text">
-          <h2 style={{
-            paddingTop: '20px',
-            color: 'white'
-          }}>Share your latest stock pick!</h2>
-          <form onSubmit={this.onSubmitHandler}>
+        <FindStockForm
+          formSubmitRegistered={this.onSubmitHandler}
+          changeRegistered={this.onChangeHandler}
+          tickerValue={this.state.ticker}/>
 
-            <select name='exchange' onChange={this.onChangeHandler}>
-              <option value="NYSE">NYSE</option>
-              <option value="LSE">LSE</option>
-              <option value="NASDAQ">NASDAQ</option>
-            </select>
-
-            <input
-              type="text"
-              name="ticker"
-              placeholder="Stock Ticker"
-              value={this.state.ticker}
-              onChange={this.onChangeHandler}/>
-            <button>Find Stock</button>
-          </form>
-        </div>
         <div className="CardAndNavContainer">
           <CardNav/> {/* for testing purposes*/}
           <DetailedCard stockData={this.state.detailedData}/>
