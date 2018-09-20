@@ -12,8 +12,13 @@ const detailedCard = (props) => {
   return (
     <div className="DetailedCard">
       <CardTabs />
-      <div className="DetailedCardData">
-        {listFields}
+      <div className="DetailedCardChartAndDataWrapper">
+        <div className="DetailedCardChart">
+          Chart data to be sourced and Chart plotting to be implemented
+        </div>
+        <div className="DetailedCardData">
+          {listFields}
+        </div>
       </div>
     </div>
   );

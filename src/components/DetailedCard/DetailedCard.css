@@ -8,10 +8,20 @@
   overflow: hidden;
 }
 
-
-.DetailedCardData{
-  overflow-y: scroll;
-  padding: 20px 40px;
+.DetailedCardChartAndDataWrapper{
   height: calc(100% - 50px); /*<-- here 50px is the height of the CardTabs*/
   box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+.DetailedCardData{
+  padding: 20px 40px;
+}
+
+.DetailedCardChart{
+  background-color: red;
+  text-align: center;
+  width: 70%; /*<-- this might have to be adjusted for various screen sizes*/
+  height: 150px;
+  margin: 15px auto;
 }

@@ -36,7 +36,10 @@ class NewStrategy extends Component {
     return (
       <div className="NewStrategy">
         <div className="form-and-text">
-          <h2 style={{paddingTop: '20px'}}>Share your latest stock pick!</h2>
+          <h2 style={{
+            paddingTop: '20px',
+            color: 'white'
+          }}>Share your latest stock pick!</h2>
           <form onSubmit={this.onSubmitHandler}>
 
             <select name='exchange' onChange={this.onChangeHandler}>
