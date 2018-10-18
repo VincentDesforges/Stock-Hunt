@@ -1,5 +1,5 @@
 .LayoutContent {
   margin-top: 56px; /* <- adjust this for various navbar heights*/
   height: calc(100vh - 56px);
-  background-color: var(--main-color-light-blue);
+  background-color: var(--main-color-dark-grey);
 }

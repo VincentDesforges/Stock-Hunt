@@ -1,18 +1,18 @@
-.CardNav {
+/*.CardNav {
   background-color: var(--main-color-dark-blue);
   box-shadow: 0px 15px 15px rgba(0,0,0,0.5);
   width: 250px;
   display: flex;
   flex-direction: column;
   border-radius: 6px;
-  padding: 6px;
+  padding: 6px;*/
 
   /*transform: translate3d(15px, -15px, 0);
   transition: all 0.3s ease-in;*/
   /*transition: all 0.3s cubic-bezier(0, 0, 0.73, 2.27);*/
-}
+/*}*/
 
-.CardNavDiv {
+/*.CardNavDiv {
   background-color: var(--main-color-white);
   border-bottom: 4px solid transparent;
   height: 60px;
@@ -21,17 +21,45 @@
   justify-content: center;
   border-radius: 6px;
   transition: all 0.3s ease-in;
-}
+}*/
 
-.CardNav:hover, .CardNav.move {
+/*.CardNav:hover, .CardNav.move {*/
   /*transform: translate3d(30px, -30px, 0);*/
+/*}*/
+
+/*.CardNavDiv:hover {*/
+  /*width: 120%;*/
+  /*transform: translateX(30px);*/
+/*}*/
+
+/*.CardNavDiv.active {
+  border-bottom: 4px solid var(--main-color-orange);
+}
+*/
+
+/*Here starts the second option for the side nav bar styling -------------*/
+
+.CardNav {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
 }
 
-.CardNavDiv:hover {
-  /*width: 120%;*/
-  transform: translateX(30px);
+.CardNavDiv {
+  border-bottom: 1px solid var(--main-color-light-grey);
+  color: var(--main-color-light-grey);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  padding-left: 5px;
+  transition: all 0.3s ease-in;
+}
+
+.CardNavDiv:hover:not(.active) {
+  padding-left: 15px;
 }
 
 .CardNavDiv.active {
-  border-bottom: 4px solid var(--main-color-orange);
+  color: var(--main-color-bright-blue);
 }

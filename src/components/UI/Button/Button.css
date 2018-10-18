@@ -1,0 +1,39 @@
+.CustomButton {
+  color: var(--main-color-white);
+  font-size: 14px;
+  background-color: transparent;
+  border-color: var(--main-color-white);
+  border-radius: 5px;
+  padding: 5px 10px;
+  margin: 0px 5px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.CustomButton:hover {
+  background-color: var(--main-color-white);
+  color: var(--main-color-black);
+}
+.CustomButton:focus {
+  outline: none;
+}
+.CustomButton:active {
+  transition: transform 30ms ease-in-out;
+  transform: scale(1.03);
+}
+
+.CustomSubmit {
+  color: var(--main-color-bright-blue);
+  border-color: var(--main-color-bright-blue);
+}
+.CustomSubmit:hover {
+  background-color: var(--main-color-bright-blue);
+  color: var(--main-color-black);
+}
+
+/* This is code for disabling a button and having it grom on hover
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+*/
