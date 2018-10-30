@@ -6,7 +6,7 @@ The Stock Sharer app is a website designed to help share their latest stock buys
 
 - [Visit us at](#visit-us-at)
 - [Disclaimer](#disclaimer)
-- [Thanks!](#thanks!)
+- [Thanks](#thanks)
 
 ## Visit us at
 This site is live at the following address: https://www.google.com/
@@ -16,5 +16,5 @@ I wrote this code primarily for fun and also to help myself out when selecting s
 
 Please do not make investment decisions on this tool alone. Many factors relevant to a company's suitability as an investment are not considered in this calculation (e.g. debt levels, management, sector trends...).
 
-## Thanks!
+## Thanks
 Thank you for coming to see my code!
